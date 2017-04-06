@@ -143,6 +143,10 @@ h2 {
   font-size: 1.4em;
 }
 
+main > aside {
+  display: none;
+}
+
 /* Mise en page main -presentation produits ------------------------------------------*/
 /* --------------------------------------------------------------*/
 
