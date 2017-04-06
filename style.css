@@ -52,12 +52,15 @@ li {
   /*border : 1px solid black;*/
 }
 
+header, footer {
+  margin: 0px;
+  background-color: rgb(38, 135, 215);
+}
+
 /* Mise en page Header ------------------------------------------*/
 /* --------------------------------------------------------------*/
 
 header {
-  margin-top: 0px;
-  background-color: rgb(38, 135, 215);
   color: white;
   /*position: sticky;*/
 }
@@ -74,7 +77,7 @@ header img {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 2em;
   /*border: 1px solid black;*/
   text-align: center;
   /*text-shadow: 0px 0px 1px white;*/
@@ -83,7 +86,7 @@ h1 {
 header nav {
   font-variant: small-caps;
   font-weight: bold;
-  padding-top: 20px;
+  padding-top: 2.3em;
   /*vertical-align: bottom;*/
 }
 
@@ -92,16 +95,19 @@ header nav li {
   padding: 2px;
 }
 
+header li > a {
+  padding-left: 25px;
+}
+
 header nav div {
   /*position: relative;*/
 }
 
 header nav div ul {
   display: none;
-  margin: 12px 0px;
+  margin: 22px 0px;
   padding: 0 14px;
   position : absolute;
-
 }
 
 header nav div:focus ul{
@@ -116,4 +122,26 @@ header nav div:focus ul{
 header nav li:hover {
   color: rgb(38, 135, 215);
   background-color: white ;
+}
+
+/* Mise en page footer ------------------------------------------*/
+/* --------------------------------------------------------------*/
+
+footer {
+  height: 46px;
+  font-style: italic;
+  /*padding: 0px 10p;*/
+ }
+
+footer a {
+  /*margin: 2px;*/
+  margin: 8px 7em;
+  background-color: white;
+  color: rgb(38, 135, 215);
+  padding: 5px;
+  border-radius: 3em;
+  text-align: center;
+
+  /*position: relative;*/
+  /*bottom: 0px;*/
 }
