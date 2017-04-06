@@ -32,8 +32,7 @@ body {
   margin: 0;
 }
 
-header > div, header > nav, #produits > section > img,
-#produits > section > p {
+header > div, header > nav {
   display: inline-block;
 }
 
@@ -130,7 +129,7 @@ header nav li:hover {
 
 main {
   text-align: justify;
-  margin: 6em 4%;
+  margin: 6.5em 4%;
 }
 
 p, main a  {
@@ -172,12 +171,22 @@ h2 {
 
 #produits > section {
   vertical-align: middle;
+  border: 1px solid green;
+  height: auto;
 }
 
 #produits > section > p {
-  position: relative;
   border: 1px solid black;
   height: auto;
+  position: relative;
+  padding: 1em 0 1em 1em;
+}
+
+#produits > section > p > img {
+  float : right;
+  margin-left: 1em;
+  position: relative;
+  /*top : -1em;*/
 }
 
 #produits > section > p > a {
@@ -186,7 +195,7 @@ h2 {
   font-weight: bold;
   font-size: 0.9em;
   position: absolute;
-  right: 0;
+  right: 170px;
   padding-top: 5px;
   border: 1px solid black;
 }
