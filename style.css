@@ -3,6 +3,31 @@
 
 /* Mise en page Générale ------------------------------------------*/
 /* --------------------------------------------------------------*/
+
+[class*="col-"] {
+    float: left;
+    /*border: 1px solid red;*/
+}
+
+.col-1 {width: 8%;}
+.col-2 {width: 16%;}
+.col-3 {width: 24%;}
+.col-4 {width: 33%;}
+.col-5 {width: 41%;}
+.col-6 {width: 49%;}
+.col-7 {width: 57%;}
+.col-8 {width: 65%;}
+.col-9 {width: 73%;}
+.col-10 {width: 81%;}
+.col-11 {width: 89.66%;}
+.col-12 {width: 100%;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 body {
   margin: 0;
 }
@@ -23,63 +48,72 @@ li {
 * {
   /*color: rgb(38, 135, 215);*/
   font-family: Arial;
-  font-size: 13px;
+  font-size: 15px;
+  /*border : 1px solid black;*/
 }
 
 /* Mise en page Header ------------------------------------------*/
 /* --------------------------------------------------------------*/
 
 header {
-  height: 40px;
+  margin-top: 0px;
   background-color: rgb(38, 135, 215);
   color: white;
   /*position: sticky;*/
 }
 
 header > div {
-  width: 60%;
-  padding: 0px 10px;
-  height: 35px;
-  /*border: 1px solid black;*/
+  margin-top: 0px;
+  padding: 0;
+  /*border: 3px solid black;*/
 }
 
 header img {
   display: none;
+  margin-top: 0px;
 }
 
 h1 {
   font-size: 20px;
   /*border: 1px solid black;*/
+  text-align: center;
   /*text-shadow: 0px 0px 1px white;*/
 }
 
 header nav {
   font-variant: small-caps;
   font-weight: bold;
-  width: 25%;
-  vertical-align: middle;
+  padding-top: 20px;
+  /*vertical-align: bottom;*/
 }
+
+header nav li {
+  margin-left: -14px;
+  padding: 2px;
+}
+
 header nav div {
-  position: relative;
+  /*position: relative;*/
 }
 
 header nav div ul {
   display: none;
-  margin: 4px 0px;
-  padding: 0 3px;
+  margin: 12px 0px;
+  padding: 0 14px;
   position : absolute;
+
 }
 
 header nav div:focus ul{
   display: block;
-  width: 64px;
-  height: 50px;
+  height: 66px;
   border-top: 2px solid white;
   background-color: rgb(38, 135, 215);
+  margin-left: -5px;
   color: white;
 }
 
-header nav li:hover{
-  color:  rgb(38, 135, 215);
+header nav li:hover {
+  color: rgb(38, 135, 215);
   background-color: white ;
 }
