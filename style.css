@@ -74,7 +74,7 @@ header img {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 2em;
   /*border: 1px solid black;*/
   text-align: center;
   /*text-shadow: 0px 0px 1px white;*/
@@ -83,7 +83,7 @@ h1 {
 header nav {
   font-variant: small-caps;
   font-weight: bold;
-  padding-top: 20px;
+  padding-top: 2.3em;
   /*vertical-align: bottom;*/
 }
 
@@ -98,7 +98,7 @@ header nav div {
 
 header nav div ul {
   display: none;
-  margin: 12px 0px;
+  margin: 22px 0px;
   padding: 0 14px;
   position : absolute;
 
