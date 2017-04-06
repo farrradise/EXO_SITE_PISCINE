@@ -130,7 +130,7 @@ header nav li:hover {
 
 main {
   text-align: justify;
-  margin: 9em 4% 0 4%;
+  margin: 10em 4% 0 4%;
 }
 
 p, main a  {
@@ -150,36 +150,45 @@ h2 {
   display: none;
 }
 
-#produits nav, #produits > section > a {
-  margin: 0 4%;
-  padding: 3% 2%;
+#produits > nav {
   background-color: rgb(38, 135, 215);
   color : white;
+  padding: 1%;
+  width: 20em; /* pour la mise en page*/
 }
 
-#produits nav a {
-  /*width: 20%;*/
+
+#produits > section > a {
+  background-color: rgb(38, 135, 215);
+  color : white;
+  padding: 5px 2%;
+  border: 1px solid green;
+  width: 30px;
+}
+
+#produits > nav > a {
   font-weight: bold;
-  margin: 3% 0px;
-  padding: 1%;
+  padding: 0.5em;
 }
 
 #produits nav a:hover {
   background-color: white ;
-  padding: 1%;
-  color : rgb(38, 135, 215);
+  color: rgb(38, 135, 215);
 }
 
 #produits > section {
-  vertical-align: middle;
-  border: 1px solid green;
-  height: 20em;
+  /*vertical-align: middle;*/
+  height: 17em;
+  margin-top: 3em;
   border-bottom: 4px solid rgb(38, 135, 215);
   z-index: 2;
 }
 
+#produits > section:last-child {
+  border-bottom: 0px;
+}
+
 #produits > section > p {
-  border: 1px solid black;
   height: auto;
   position: relative;
   padding: 1em 0 1em 1em;
@@ -188,19 +197,17 @@ h2 {
 #produits > section > p > img {
   float : right;
   margin-left: 1em;
-  position: relative;
-  /*top : -1em;*/
+  /*position: relative;*/
 }
 
 #produits > section > p > a {
-  /*text-align: right;*/
   font-style: italic;
   font-weight: bold;
+  color: rgb(38, 135, 215);
   font-size: 0.9em;
   position: absolute;
   right: 170px;
   padding-top: 5px;
-  border: 1px solid black;
 }
 
 #produits > section > a {
@@ -211,11 +218,9 @@ h2 {
   text-align: center;
   margin-top: 10px;
   position: absolute;
-  border: 1px solid black;
 }
 
 #produits > section > img {
-  border: 1px solid black;
 }
 
 /* Mise en page footer ------------------------------------------*/
@@ -224,18 +229,18 @@ h2 {
 footer {
   height: 46px;
   font-style: italic;
+  position: relative;
   /*padding: 0px 10p;*/
  }
 
 footer a {
   /*margin: 2px;*/
-  margin: 8px 7em;
+  margin: 0 8em;
   background-color: white;
   color: rgb(38, 135, 215);
   padding: 5px;
   border-radius: 3em;
   text-align: center;
-
-  /*position: relative;*/
-  /*bottom: 0px;*/
+  position: absolute;
+  bottom: 10px;
 }
