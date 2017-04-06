@@ -32,7 +32,8 @@ body {
   margin: 0;
 }
 
-header > div, header > nav {
+header > div, header > nav, #produits > section > img,
+#produits > section > p {
   display: inline-block;
 }
 
@@ -63,7 +64,8 @@ header, footer {
 
 header {
   color: white;
-  /*position: sticky;*/
+  position: fixed;
+  top: 0;
 }
 
 header > div {
@@ -134,39 +136,50 @@ header nav li:hover {
 
 main {
   text-align: justify;
-  margin: 2px 4%;
+  margin: 6em 4%;
+}
+
+p, main a  {
+  font-size: 12px;
 }
 
 h2 {
   color: rgb(38, 135, 215);
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 /* Mise en page main -presentation produits ------------------------------------------*/
 /* --------------------------------------------------------------*/
 
-main > section > div {
+#produits > section > div {
   display: none;
 }
 
-main nav {
-  width: 100%;
+#produits nav {
   margin: 0 4%;
   padding: 3% 2%;
   background-color: rgb(38, 135, 215);
   color : white;
 }
 
-main nav a {
+#produits nav a {
+  /*width: 20%;*/
+  font-weight: bold;
   margin: 3% 0px;
-  padding: 1%;
+  padding: 2%;
 }
 
-main nav a:hover {
+#produits nav a:hover {
   background-color: white ;
   padding: 1%;
   color : rgb(38, 135, 215);
+}
+
+#produits > section >
+
+#produits > section > img {
+  border: 1px solid black;
 }
 
 /* Mise en page footer ------------------------------------------*/
