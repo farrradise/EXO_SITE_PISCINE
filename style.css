@@ -5,7 +5,7 @@
 /* --------------------------------------------------------------*/
 
 [class*="col-"] {
-    float: left;
+    /*float: left;*/
     /*border: 1px solid red;*/
 }
 
@@ -19,7 +19,7 @@
 .col-8 {width: 65%;}
 .col-9 {width: 73%;}
 .col-10 {width: 81%;}
-.col-11 {width: 89.66%;}
+.col-11 {width: 90%;}
 .col-12 {width: 100%;}
 
 .row::after {
@@ -49,6 +49,7 @@ li {
   /*color: rgb(38, 135, 215);*/
   font-family: Arial;
   font-size: 15px;
+  text-align: justify;
   /*border : 1px solid black;*/
 }
 
@@ -83,36 +84,40 @@ h1 {
   /*text-shadow: 0px 0px 1px white;*/
 }
 
-header nav {
+header {
   font-variant: small-caps;
   font-weight: bold;
-  padding-top: 2.3em;
+  padding-top: 1em;
   /*vertical-align: bottom;*/
 }
 
 header nav li {
-  margin-left: -14px;
-  padding: 2px;
+  padding: 3px 3px;
+  width: 5.5em;
+  border: 1px solid black;
 }
 
 header li > a {
-  padding-left: 25px;
+  padding: 0px;
+  border: 1px solid green;
 }
 
 header nav div {
-  /*position: relative;*/
+  padding-top: 2em;
 }
 
 header nav div ul {
+  border: 1px solid red;
   display: none;
-  margin: 22px 0px;
-  padding: 0 14px;
+  width: 6em;
+  margin: 26px 0px;
+  padding: 0px;
   position : absolute;
 }
 
 header nav div:focus ul{
   display: block;
-  height: 66px;
+  height: auto;
   border-top: 2px solid white;
   background-color: rgb(38, 135, 215);
   margin-left: -5px;
@@ -122,6 +127,27 @@ header nav div:focus ul{
 header nav li:hover {
   color: rgb(38, 135, 215);
   background-color: white ;
+}
+
+/* Mise en page Main - GENERAL ------------------------------------------*/
+/* --------------------------------------------------------------*/
+
+main {
+  text-align: justify;
+  margin: 2px 4%;
+}
+
+h2 {
+  color: rgb(38, 135, 215);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Mise en page main -presentation produits ------------------------------------------*/
+/* --------------------------------------------------------------*/
+
+main > section > div {
+  display: none;
 }
 
 /* Mise en page footer ------------------------------------------*/
