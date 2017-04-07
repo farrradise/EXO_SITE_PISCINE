@@ -269,9 +269,9 @@ footer {
   clear: both;
   height: 46px;
   font-style: italic;
+  margin-top: 2em;
   /*background-color: rgb(38, 135, 215);*/
   position: relative;
-  border: 1px solid red;
   /*bottom: 0px;*/
   /*padding: 0px 10p;*/
  }
