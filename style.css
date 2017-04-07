@@ -5,7 +5,7 @@
 /* --------------------------------------------------------------*/
 
 [class*="col-"] {
-    /*float: left;*/
+    float: left;
     /*border: 1px solid red;*/
 }
 
@@ -32,7 +32,7 @@ body {
   margin: 0;
 }
 
-header > div, header > nav {
+header > div, header > nav, main > section > address, #contact iframe {
   display: inline-block;
 }
 
@@ -46,11 +46,9 @@ li {
 }
 
 * {
-  /*color: rgb(38, 135, 215);*/
   font-family: Arial;
-  font-size: 15px;
+  font-size: 12px;
   text-align: justify;
-  /*border : 1px solid black;*/
 }
 
 header, footer {
@@ -158,7 +156,7 @@ main > aside {
   background-color: rgb(38, 135, 215);
   color : white;
   padding: 1%;
-  width: 20em; /* pour la mise en page*/
+  width: 25em; /* pour la mise en page*/
 }
 
 
@@ -226,13 +224,55 @@ main > aside {
 #produits > section > img {
 }
 
+
+/* Mise en page main - contact ------------------------------------------*/
+/* --------------------------------------------------------------*/
+
+#contact iframe {
+  margin-left: 6px;
+  border: 3px solid rgb(38, 135, 215);
+  border-radius: 1em;
+}
+
+address {
+  text-align: right;
+  margin: 2em 0px;
+  font-size: 10px;
+  font-style: normal;
+}
+
+#contact address i {
+  margin-top: 1em;
+  padding-right: 4px;
+}
+
+#contact section > form {
+  font-size: 12px;
+}
+
+#contact section > form input, #contact section > form textarea {
+  margin: 0em 0em 1em 0em;
+}
+
+#contact section > form button {
+  position: relative;
+  left: 10em;
+  bottom: 1em;
+}
+
+
+
 /* Mise en page footer ------------------------------------------*/
 /* --------------------------------------------------------------*/
 
 footer {
+  clear: both;
   height: 46px;
   font-style: italic;
+  /*background-color: rgb(38, 135, 215);*/
   position: relative;
+  border: 1px solid red;
+  /*bottom: 0px;*/
   /*padding: 0px 10p;*/
  }
 
