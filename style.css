@@ -110,7 +110,8 @@ header nav div ul {
   position : absolute;
 }
 
-header nav div:focus ul{
+header nav div:focus ul,
+header nav div:hover ul{
   display: block;
   height: auto;
   border-top: 2px solid white;
@@ -293,10 +294,14 @@ td, th {
 #tarifs > section > a {
   margin-top: 1em;
 }
-
+#tarifs > section > div {
+  position: relative;
+}
 #tarifs > section span {
   font-size: 0.85em;
   font-style: italic;
+  position: absolute;
+  right: 20px;
   padding: 2px 0px;
 }
 
