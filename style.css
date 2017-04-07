@@ -275,16 +275,16 @@ address {
 
 #tarifs table {
   text-align: center;
-  border: 3px solid rgb(38, 135, 215) ;
+  border: 2px solid rgb(38, 135, 215) ;
   background-color: rgb(38, 135, 215);
   margin: 0 0 0 0.8em;
 }
 
 td, th {
-  font-size: 0.85em;
-  padding: 4px;
-  width: 3em;
-  border: 0.5px solid rgb(38, 135, 215);
+  font-size: 0.75em;
+  padding: 1px;
+  width: 2.5em;
+  /*border: 0.5px solid rgb(38, 135, 215);*/
   background-color: white;
   text-align: center;
 
