@@ -449,7 +449,7 @@ aside a {
 
 /* mise en page main section produits*/
 
-#produits section {
+#produits section, #tarifs section {
   display: inline-block;
   width: 45%;
   margin: 2% 2%;
@@ -458,14 +458,29 @@ aside a {
 #produits section img {
   width: 150px;
 }
-#produits nav {
+#produits nav, #tarifs nav {
   display: none;
 }
 
-#produits #cancelbordersection {
+#produits #cancelbordersection, #tarifs #cancelbordersection {
   border: none;
+}
+
+#tarifs > p > img {
+  display: none;
 }
 }
 /* Ecrans moyens (desktops, 992px et plus) */
 @media (min-width: 992px) {
+
+
+/* mise en page main - produits ET tarifs */
+#produits > section {
+  width: 90%;
+}
+
+#produits > section > div:first-of-type {
+  display: block;
+}
+
 }
