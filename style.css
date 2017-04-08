@@ -90,7 +90,7 @@ header {
 }
 
 header nav li {
-  font-size: 1.6em;
+  /*font-size: 1.6em;*/
   padding: 3px 3px;
   width: 5.5em;
 }
@@ -100,8 +100,11 @@ header li > a {
 }
 
 header nav div {
-  padding-top: 2em;
-  font-size: 1.4em;
+  /*padding-top: 0.6em;*/
+}
+
+header nav div p, header nav div ul > li {
+  /*font-size: 36px;*/
 }
 
 header nav div ul {
@@ -125,6 +128,7 @@ header nav div:hover ul{
 header nav li:hover {
   color: rgb(38, 135, 215);
   background-color: white ;
+  width: auto;
 }
 
 /* Mise en page Main - GENERAL ------------------------------------------*/
@@ -287,7 +291,6 @@ td, th {
   font-size: 0.75em;
   padding: 1px;
   width: 2.5em;
-  /*border: 0.5px solid rgb(38, 135, 215);*/
   background-color: white;
   text-align: center;
 
@@ -337,48 +340,54 @@ footer a {
 /* Petits écrans (tablettes, 768px et plus) */
 @media (min-width: 600px) {
 
-  header nav li {
-    font-size: 1.6em;
-    /*padding: 3px 3px;*/
-    /*width: 5.5em;*/
-  }
-
-  header li > a {
-    padding: 0px;
-  }
-
-  header nav div {
-    padding: 2em 0px;
-    font-size: 1.4em;
-
-  }
-
-  header nav div ul {
-    border-top: 2px solid white;
-    display: inline;
-    /*width: 100px;*/
-    margin: 0px;
-    padding: 0px;
-    position : relative;
-  }
-
-    header nav div li {
-      display: inline;
-      width: 40px;
-    }
-
-  header nav div:hover ul{
-  }
-
-  header > nav > div > p:first {
-    display: none;
-  }
-
-*  {
-    /*color : red;*/
-  }
+/* mise en page header */
+header div {
+  padding-left: 2em;
 }
 
+header div > img {
+  display: inline-block;
+  height: 150px;
+}
+
+header h1 {
+  position: absolute;
+  font-size: 5em;
+  bottom: 0em;
+  left: 1em;
+  opacity: 0.95;
+}
+
+header nav {
+  margin-left: 3em;
+  position: relative;
+  top: 4em;
+  border: 1px solid yellow;
+}
+header nav li {
+  display: inline;
+}
+
+header nav div {
+  padding-top: 2em;
+}
+
+header nav div p {
+  /*text-align: center;*/
+  width: 7em;
+  border: 1px solid red;
+}
+
+header nav div ul {
+  margin: 5px 2px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  display: block;
+  width: auto;
+  position : absolute;
+}
+
+}
 /* Ecrans moyens (desktops, 992px et plus) */
 @media (min-width: 992px) {
 }
