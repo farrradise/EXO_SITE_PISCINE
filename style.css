@@ -32,7 +32,8 @@ body {
   margin: 0;
 }
 
-header > div, header > nav, main > section > address, #contact iframe
+header > div, header > nav, main > section > address,
+#contact iframe
 {
   display: inline-block;
 }
@@ -135,6 +136,8 @@ header nav li:hover {
 main {
   text-align: justify;
   margin: 10em 4% 0 4%;
+  position: relative;
+  left: 2.5em;
 }
 
 p, main a  {
@@ -379,6 +382,31 @@ header nav div ul {
   display: block;
   width: auto;
   position : absolute;
+}
+/* mise en page main --------------*/
+
+main {
+  width: 75%;
+}
+
+main {
+  text-align: justify;
+  margin: 14em 2% 0 2%;
+  position: relative;
+  left: 0em;
+}
+/* aside ----------------*/
+
+aside {
+  /*width: 30%;*/
+  background-color: rgb(38, 135, 215);
+  position: absolute;
+  height: 260%;
+  right: 0em;
+  top : 13.5em;
+}
+body > aside {
+  display: inline block;
 }
 
 }
