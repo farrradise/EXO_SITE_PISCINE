@@ -357,7 +357,7 @@ header h1 {
   position: absolute;
   font-size: 5em;
   bottom: 0em;
-  /*left: 1em;*/
+  left: 1em;
   opacity: 0.95;
 }
 
@@ -445,6 +445,25 @@ aside a {
   border-radius: 2px;
   padding: 0px 5px;
   color: rgb(38, 135, 215);
+}
+
+/* mise en page main section produits*/
+
+#produits section {
+  display: inline-block;
+  width: 45%;
+  margin: 2% 2%;
+}
+
+#produits section img {
+  width: 150px;
+}
+#produits nav {
+  display: none;
+}
+
+#produits #cancelbordersection {
+  border: none;
 }
 }
 /* Ecrans moyens (desktops, 992px et plus) */
