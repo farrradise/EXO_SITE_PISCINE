@@ -86,25 +86,25 @@ header {
   font-weight: bold;
   padding-top: 1em;
   z-index: 1;
-  /*vertical-align: bottom;*/
 }
 
 header nav li {
-  /*font-size: 1.6em;*/
   padding: 3px 3px;
   width: 5.5em;
+  height: 20px;
 }
 
 header li > a {
   padding: 0px;
 }
 
-header nav div {
-  /*padding-top: 0.6em;*/
+header nav {
+  position: relative;
+  top :0.5em;
 }
 
-header nav div p, header nav div ul > li {
-  /*font-size: 36px;*/
+header nav div p {
+  font-size: 20px;
 }
 
 header nav div ul {
@@ -121,14 +121,12 @@ header nav div:hover ul{
   height: auto;
   border-top: 2px solid white;
   background-color: rgb(38, 135, 215);
-  margin-left: -5px;
   color: white;
 }
 
 header nav li:hover {
   color: rgb(38, 135, 215);
   background-color: white ;
-  width: auto;
 }
 
 /* Mise en page Main - GENERAL ------------------------------------------*/
@@ -342,7 +340,7 @@ footer a {
 
 /* mise en page header */
 header div {
-  padding-left: 2em;
+  padding-left: 1em;
 }
 
 header div > img {
@@ -354,16 +352,14 @@ header h1 {
   position: absolute;
   font-size: 5em;
   bottom: 0em;
-  left: 1em;
+  /*left: 1em;*/
   opacity: 0.95;
 }
 
 header nav {
-  margin-left: 3em;
-  position: relative;
-  top: 4em;
-  border: 1px solid yellow;
+  margin-left: 4em;
 }
+
 header nav li {
   display: inline;
 }
@@ -373,9 +369,7 @@ header nav div {
 }
 
 header nav div p {
-  /*text-align: center;*/
   width: 7em;
-  border: 1px solid red;
 }
 
 header nav div ul {
