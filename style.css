@@ -96,7 +96,7 @@ header nav li {
 }
 
 header li > a {
-  padding: 0px;
+  padding: 3px 1em;
 }
 
 header nav {
@@ -104,7 +104,7 @@ header nav {
   top :0.5em;
 }
 
-header nav div p {
+header nav div p  {
   font-size: 20px;
 }
 
@@ -158,7 +158,6 @@ main > section {
   margin-top: 4em;
   height: 25em;
   border-bottom: 4px solid rgb(38, 135, 215);
-  z-index: 2;
 }
 
 main > section:last-of-type {
@@ -322,6 +321,7 @@ footer {
   font-style: italic;
   margin-top: 2em;
   position: relative;
+  z-index: 2;
  }
 
 footer a {
@@ -421,7 +421,7 @@ aside section {
   width: 80%;
   border: 3px solid white;
   box-shadow: 0px 1px 1px white;
-  margin: 15px auto;
+  margin: 10px auto;
   height: auto;
   text-align: center;
   padding: 1em;
@@ -436,7 +436,7 @@ aside blockquote {
 aside h3 {
   margin-top: 0;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.25em;
   border-bottom: 1px solid white;
 }
 
