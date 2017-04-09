@@ -182,7 +182,7 @@ main > section > a {
   background-color: rgb(38, 135, 215);
   color : white;
   padding: 5px 2%;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 
@@ -210,7 +210,7 @@ main > section p > img, main > p > img {
 /* Mise en page main -presentation produits ------------------------------------------*/
 /* --------------------------------------------------------------*/
 
-#produits > section > div {
+#produits > section > div, #produits > section > p > img:last-of-type {
   display: none;
 }
 
@@ -225,7 +225,7 @@ main > section p > img, main > p > img {
 }
 
 #produits img {
-  width: 100px;
+  width: 110px;
 }
 
 #produits > section > a {
@@ -325,7 +325,7 @@ footer {
  }
 
 footer a {
-  margin: 0 8em;
+  margin: 0 30%;
   background-color: white;
   color: rgb(38, 135, 215);
   padding: 5px;
@@ -333,6 +333,7 @@ footer a {
   text-align: center;
   position: absolute;
   bottom: 10px;
+  max-width: 200px;
 }
 
 
@@ -413,12 +414,17 @@ aside section h3, aside section, aside section p {
   display: inherit;
   position: relative;
   right: 0;
-  color: white;
+  color: rgb(38, 135, 215);
+  background-color: white;
+}
+
+aside section p, aside section blockquote {
+  font-size: 0.85em;
   font-weight: bold;
 }
 
 aside section {
-  width: 80%;
+  width: 70%;
   border: 3px solid white;
   box-shadow: 0px 1px 1px white;
   margin: 10px auto;
@@ -429,7 +435,7 @@ aside section {
 
 aside blockquote {
   position: relative;
-  left: -3em;
+  left: -3.5em;
   width: 95%;
 }
 
@@ -437,14 +443,15 @@ aside h3 {
   margin-top: 0;
   text-align: center;
   font-size: 1.25em;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid rgb(38,135,215);
 }
 
 aside a {
-  background-color: white;
+  background-color: rgb(38, 135, 215);
+  font-weight: bold;
   border-radius: 2px;
   padding: 0px 5px;
-  color: rgb(38, 135, 215);
+  color: white;
 }
 
 /* mise en page main section produits*/
@@ -477,10 +484,23 @@ aside a {
 /* mise en page main - produits ET tarifs */
 #produits > section {
   width: 90%;
+  height: 30em;
 }
 
 #produits > section > div:first-of-type {
   display: block;
+  padding-left: 1em;
+}
+#produits > section > p > a {
+  display: none;
 }
 
+#produits > section > p > img:first-of-type {
+  display: none;
+}
+
+#produits > section > p > img:last-of-type {
+  display: block;
+  width: 35%;
+}
 }
