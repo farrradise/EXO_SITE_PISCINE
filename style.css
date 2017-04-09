@@ -268,13 +268,13 @@ address {
 }
 
 #contact section > form button {
-  position: relative;
-  left: 10em;
-  bottom: 1em;
+  position: absolute;
+  left: 0em;
+  bottom: 0.5em;
 }
 
 #contact section {
-  height: auto;
+  height: 20em;
   padding-bottom: 2em;
 }
 
@@ -477,6 +477,26 @@ aside a {
 #tarifs > p > img {
   display: none;
 }
+
+/* mise en page contact */
+
+#contact {
+  height: 31em;
+}
+
+#contact > section {
+  position: relative;
+  display: inline-block;
+  width: 48.5%;
+}
+
+#contact > section:first-child {
+  top : -6em;
+  border-right: 4px solid rgb(38, 135, 215);
+  border-bottom: 0px;
+  margin-right: 10px;
+}
+
 }
 /* Ecrans moyens (desktops, 992px et plus) */
 @media (min-width: 992px) {
