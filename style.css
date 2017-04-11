@@ -29,6 +29,7 @@
 }
 
 body {
+  position: relative;
   margin: 0;
 }
 
@@ -36,6 +37,13 @@ header > div, header > nav, main > section > address,
 #contact iframe
 {
   display: inline-block;
+}
+
+
+aside, aside > section, aside > section >h3, aside > section > p,
+#produits > section > div, #produits > section > p > img:last-of-type,
+header img, header nav div ul {
+  display: none;
 }
 
 a {
@@ -73,7 +81,6 @@ header > div {
 }
 
 header img {
-  display: none;
   margin-top: 0px;
 }
 
@@ -109,7 +116,6 @@ header nav div p  {
 }
 
 header nav div ul {
-  display: none;
   width: 6em;
   margin: 10px 0px;
   padding: 0px;
@@ -149,10 +155,6 @@ h2 {
   font-weight: bold;
   font-size: 1.4em;
 }
-
-aside, aside > section, aside > section >h3, aside > section > p {
- display: none;
- }
 
 main > section {
   margin-top: 4em;
@@ -210,9 +212,6 @@ main > section p > img, main > p > img {
 /* Mise en page main -presentation produits ------------------------------------------*/
 /* --------------------------------------------------------------*/
 
-#produits > section > div, #produits > section > p > img:last-of-type {
-  display: none;
-}
 
 #produit > section {
   height: 30em;
@@ -323,6 +322,7 @@ footer {
   margin-top: 2em;
   position: relative;
   z-index: 2;
+  /*bottom: 0px;*/
  }
 
 footer a {
@@ -413,8 +413,8 @@ aside {
 
 aside section h3, aside section, aside section p {
   display: inherit;
-  position: relative;
-  right: 0;
+  /*position: relative;*/
+  /*right: 0;*/
   color: rgb(38, 135, 215);
   background-color: white;
 }
@@ -466,7 +466,8 @@ aside a {
 #produits section img {
   width: 150px;
 }
-#produits nav, #tarifs nav {
+
+#produits nav, #tarifs nav, #tarifs > p > img {
   display: none;
 }
 
@@ -474,18 +475,17 @@ aside a {
   border: none;
 }
 
-#tarifs > p > img {
-  display: none;
-}
 
 /* mise en page contact */
 
 #contact {
-  height: 31em;
+  top: 3em;
+  min-height: 35em;/*pour régler un pb de footer qui flotte*/
+  /*position: relative;*/
 }
 
 #contact > section {
-  position: relative;
+  position:inherit;
   display: inline-block;
   width: 48.5%;
 }
@@ -497,12 +497,21 @@ aside a {
   margin-right: 10px;
 }
 
+footer {
+  bottom: -1em;
+}
 }
 /* Ecrans moyens (desktops, 992px et plus) */
 @media (min-width: 992px) {
 
 
 /* mise en page main - produits ET tarifs */
+
+
+#produits #cancelbordersection, #tarifs #cancelbordersection {
+  border-bottom: 4px solid rgb(38, 135, 215);
+}
+
 #produits > section {
   width: 90%;
   height: 30em;
@@ -512,11 +521,7 @@ aside a {
   display: block;
   padding-left: 1em;
 }
-#produits > section > p > a {
-  display: none;
-}
-
-#produits > section > p > img:first-of-type {
+#produits > section > p > a, #produits > section > p > img:first-of-type {
   display: none;
 }
 
